@@ -9,7 +9,7 @@ describe('<StyledNavLink />', () => {
     const wrapper = shallow(<StyledNavLink />);
     expect(wrapper).toMatchSnapshot();
   });
-  it('render a StyledNavLink', () => {
+  it('render a reactstrap NavLink', () => {
     const renderedComponent = shallow(<StyledNavLink />);
     expect(renderedComponent.type()).toEqual(NavLink);
   });

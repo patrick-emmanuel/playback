@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import {
-  NavbarToggler,
-  Collapse
-} from 'reactstrap';
+import { NavbarToggler, Collapse } from 'reactstrap';
 import StyledNav from './StyledNav';
 import StyledNavbar from './StyledNavbar';
 import StyledNavItem from './StyledNavItem';
@@ -18,13 +15,13 @@ class NavBar extends Component {
     };
   }
   toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+    let isOpenState = this.state.isOpen;
+    this.setState({ isOpen: !isOpenState });
   }
 
   render() {
-    return <div>
+    return (
+      <div>
         <StyledNavbar expand="md">
           <StyledNavbarBrand href="/">Spotify</StyledNavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -50,7 +47,8 @@ class NavBar extends Component {
             </StyledNav>
           </Collapse>
         </StyledNavbar>
-      </div>;
+      </div>
+    );
   }
 }
 

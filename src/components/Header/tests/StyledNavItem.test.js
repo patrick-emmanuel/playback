@@ -5,11 +5,11 @@ import StyledNavItem from '../StyledNavItem';
 import { NavItem } from 'reactstrap';
 
 describe('<StyledNavItem />', () => {
-  it('render a StyledNavItem', () => {
+  it('render a NavItem', () => {
     const wrapper = shallow(<StyledNavItem />);
     expect(wrapper).toMatchSnapshot();
   });
-  it('render a StyledNavItem', () => {
+  it('render a reactstrap NavItem', () => {
     const renderedComponent = shallow(<StyledNavItem />);
     expect(renderedComponent.type()).toEqual(NavItem);
   });
