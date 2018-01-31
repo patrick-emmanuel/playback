@@ -5,6 +5,7 @@ import StyledNavbar from './StyledNavbar';
 import StyledNavItem from './StyledNavItem';
 import StyledNavLink from './StyledNavLink';
 import StyledNavbarBrand from './StyledNavbarBrand';
+import Separator from './Separator';
 
 class NavBar extends Component {
   constructor(props) {
@@ -20,8 +21,7 @@ class NavBar extends Component {
   }
 
   render() {
-    return (
-      <div>
+    return <div>
         <StyledNavbar expand="md">
           <StyledNavbarBrand href="/">Spotify</StyledNavbarBrand>
           <NavbarToggler onClick={this.toggle} />
@@ -37,6 +37,9 @@ class NavBar extends Component {
                 <StyledNavLink href="/components/">Download</StyledNavLink>
               </StyledNavItem>
               <StyledNavItem>
+                <Separator>|</Separator>
+              </StyledNavItem>
+              <StyledNavItem>
                 <StyledNavLink href="/components/">Sign up</StyledNavLink>
               </StyledNavItem>
               <StyledNavItem>
@@ -47,8 +50,7 @@ class NavBar extends Component {
             </StyledNav>
           </Collapse>
         </StyledNavbar>
-      </div>
-    );
+      </div>;
   }
 }
 

@@ -1,8 +1,9 @@
 import styled from 'styled-components';
+import heroLg from './hero-lg.jpg';
 
 const Hero = styled.div`
-  background-color: #222137;
-  height: 100vh;
+  background-image: url(${heroLg});
+  height: 75vh;
   background-attachment: fixed;
   background-size: cover;
   text-align: center;

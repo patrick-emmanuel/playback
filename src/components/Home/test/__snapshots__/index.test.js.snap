@@ -1,10 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<StyledNavbarBrand /> render a StyledNavbarBrand 1`] = `
+exports[`<Home /> render a Home 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Styled(NavbarBrand) />,
+  Symbol(enzyme.__unrendered__): <Home />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -15,27 +15,41 @@ ShallowWrapper {
   Symbol(enzyme.__node__): Object {
     "instance": null,
     "key": undefined,
-    "nodeType": "function",
+    "nodeType": "host",
     "props": Object {
-      "className": "sc-bdVaJa fWwAKM",
-      "tag": "a",
+      "children": <HomeHero />,
     },
     "ref": null,
-    "rendered": null,
-    "type": [Function],
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "function",
+      "props": Object {},
+      "ref": null,
+      "rendered": null,
+      "type": [Function],
+    },
+    "type": "div",
   },
   Symbol(enzyme.__nodes__): Array [
     Object {
       "instance": null,
       "key": undefined,
-      "nodeType": "function",
+      "nodeType": "host",
       "props": Object {
-        "className": "sc-bdVaJa fWwAKM",
-        "tag": "a",
+        "children": <HomeHero />,
       },
       "ref": null,
-      "rendered": null,
-      "type": [Function],
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {},
+        "ref": null,
+        "rendered": null,
+        "type": [Function],
+      },
+      "type": "div",
     },
   ],
   Symbol(enzyme.__options__): Object {
