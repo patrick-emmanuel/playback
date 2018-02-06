@@ -5,6 +5,7 @@ injectGlobal`
   html,
   body {
     min-height: 100vh;
+    font-family: 'Oxygen', serif;
   }
 
   *{
