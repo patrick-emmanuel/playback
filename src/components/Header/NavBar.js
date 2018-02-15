@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import { NavbarToggler, Collapse, Button } from 'reactstrap';
+import { NavbarToggler, Collapse } from 'reactstrap';
 import StyledNav from './StyledNav';
+import StyledSignupButton from './StyledSignupButton';
 import StyledNavbar from './StyledNavbar';
 import StyledNavItem from './StyledNavItem';
 import StyledNavLink from './StyledNavLink';
 import StyledNavbarBrand from './StyledNavbarBrand';
+import SignupText from './SignupText';
 import Logo from './Logo'
 import logo from './logo.png';
 
@@ -32,7 +34,9 @@ class NavBar extends Component {
             <StyledNav className="ml-auto" navbar>
               <StyledNavItem>
                 <StyledNavLink href="https://github.com/reactstrap/reactstrap">
-                  <Button color="primary">primary</Button>
+                  <StyledSignupButton>
+                    <SignupText>Sign up</SignupText>
+                  </StyledSignupButton>
                 </StyledNavLink>
               </StyledNavItem>
             </StyledNav>
