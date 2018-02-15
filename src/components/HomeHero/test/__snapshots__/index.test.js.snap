@@ -17,16 +17,75 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "class",
     "props": Object {
-      "children": <styled.div />,
+      "children": <styled.div>
+        <styled.h1>
+                Spotify is currently not available 
+                <br />
+                in your country.
+        </styled.h1>
+        <styled.h4>
+                Be the first to know when we launch.
+        </styled.h4>
+</styled.div>,
     },
     "ref": null,
     "rendered": Object {
       "instance": null,
       "key": undefined,
       "nodeType": "class",
-      "props": Object {},
+      "props": Object {
+        "children": Array [
+          <styled.h1>
+            Spotify is currently not available 
+            <br />
+            in your country.
+</styled.h1>,
+          <styled.h4>
+            Be the first to know when we launch.
+</styled.h4>,
+        ],
+      },
       "ref": null,
-      "rendered": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": Array [
+              "Spotify is currently not available ",
+              <br />,
+              "in your country.",
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            "Spotify is currently not available ",
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": "br",
+            },
+            "in your country.",
+          ],
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Be the first to know when we launch.",
+          },
+          "ref": null,
+          "rendered": "Be the first to know when we launch.",
+          "type": [Function],
+        },
+      ],
       "type": [Function],
     },
     "type": [Function],
@@ -37,16 +96,75 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "class",
       "props": Object {
-        "children": <styled.div />,
+        "children": <styled.div>
+          <styled.h1>
+                    Spotify is currently not available 
+                    <br />
+                    in your country.
+          </styled.h1>
+          <styled.h4>
+                    Be the first to know when we launch.
+          </styled.h4>
+</styled.div>,
       },
       "ref": null,
       "rendered": Object {
         "instance": null,
         "key": undefined,
         "nodeType": "class",
-        "props": Object {},
+        "props": Object {
+          "children": Array [
+            <styled.h1>
+              Spotify is currently not available 
+              <br />
+              in your country.
+</styled.h1>,
+            <styled.h4>
+              Be the first to know when we launch.
+</styled.h4>,
+          ],
+        },
         "ref": null,
-        "rendered": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": Array [
+                "Spotify is currently not available ",
+                <br />,
+                "in your country.",
+              ],
+            },
+            "ref": null,
+            "rendered": Array [
+              "Spotify is currently not available ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {},
+                "ref": null,
+                "rendered": null,
+                "type": "br",
+              },
+              "in your country.",
+            ],
+            "type": [Function],
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Be the first to know when we launch.",
+            },
+            "ref": null,
+            "rendered": "Be the first to know when we launch.",
+            "type": [Function],
+          },
+        ],
         "type": [Function],
       },
       "type": [Function],

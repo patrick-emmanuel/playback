@@ -6,6 +6,8 @@ import StyledNavItem from './StyledNavItem';
 import StyledNavLink from './StyledNavLink';
 import StyledNavbarBrand from './StyledNavbarBrand';
 import Separator from './Separator';
+import styled from 'styled-components';
+
 
 class NavBar extends Component {
   constructor(props) {
@@ -22,7 +24,7 @@ class NavBar extends Component {
 
   render() {
     return <div>
-        <StyledNavbar expand="md">
+        <StyledNavbar expand="md" className="fixed-top">
           <StyledNavbarBrand href="/">Spotify</StyledNavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

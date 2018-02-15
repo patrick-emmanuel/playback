@@ -8,8 +8,7 @@ const HomeHero = () => (
   <Wrapper>
     <Hero>
       <HeroCaption>
-        Spotify is currently not available <br />
-        in your country.
+        What music will you listen to today?
       </HeroCaption>
       <SubCaption>
         Be the first to know when we launch.
