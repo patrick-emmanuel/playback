@@ -19,9 +19,7 @@ ShallowWrapper {
     "props": Object {
       "children": <styled.div>
         <styled.h1>
-                Spotify is currently not available 
-                <br />
-                in your country.
+                What music will you listen to today?
         </styled.h1>
         <styled.h4>
                 Be the first to know when we launch.
@@ -36,9 +34,7 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <styled.h1>
-            Spotify is currently not available 
-            <br />
-            in your country.
+            What music will you listen to today?
 </styled.h1>,
           <styled.h4>
             Be the first to know when we launch.
@@ -52,26 +48,10 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": Array [
-              "Spotify is currently not available ",
-              <br />,
-              "in your country.",
-            ],
+            "children": "What music will you listen to today?",
           },
           "ref": null,
-          "rendered": Array [
-            "Spotify is currently not available ",
-            Object {
-              "instance": null,
-              "key": undefined,
-              "nodeType": "host",
-              "props": Object {},
-              "ref": null,
-              "rendered": null,
-              "type": "br",
-            },
-            "in your country.",
-          ],
+          "rendered": "What music will you listen to today?",
           "type": [Function],
         },
         Object {
@@ -98,9 +78,7 @@ ShallowWrapper {
       "props": Object {
         "children": <styled.div>
           <styled.h1>
-                    Spotify is currently not available 
-                    <br />
-                    in your country.
+                    What music will you listen to today?
           </styled.h1>
           <styled.h4>
                     Be the first to know when we launch.
@@ -115,9 +93,7 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <styled.h1>
-              Spotify is currently not available 
-              <br />
-              in your country.
+              What music will you listen to today?
 </styled.h1>,
             <styled.h4>
               Be the first to know when we launch.
@@ -131,26 +107,10 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": Array [
-                "Spotify is currently not available ",
-                <br />,
-                "in your country.",
-              ],
+              "children": "What music will you listen to today?",
             },
             "ref": null,
-            "rendered": Array [
-              "Spotify is currently not available ",
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "host",
-                "props": Object {},
-                "ref": null,
-                "rendered": null,
-                "type": "br",
-              },
-              "in your country.",
-            ],
+            "rendered": "What music will you listen to today?",
             "type": [Function],
           },
           Object {

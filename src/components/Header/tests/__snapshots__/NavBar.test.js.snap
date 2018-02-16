@@ -18,12 +18,16 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": <Styled(Navbar)
+        className="fixed-top"
         expand="md"
 >
         <Styled(NavbarBrand)
                 href="/"
         >
-                Spotify
+                <styled.img
+                        alt="logo"
+                        src="logo.png"
+                />
         </Styled(NavbarBrand)>
         <NavbarToggler
                 onClick={[Function]}
@@ -54,42 +58,13 @@ ShallowWrapper {
                 >
                         <Styled(NavItem)>
                                 <Styled(NavLink)
-                                        href="/components/"
-                                >
-                                        Premium
-                                </Styled(NavLink)>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                <Styled(NavLink)
-                                        href="/components/"
-                                >
-                                        Help
-                                </Styled(NavLink)>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                <Styled(NavLink)
-                                        href="/components/"
-                                >
-                                        Download
-                                </Styled(NavLink)>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                <styled.h6>
-                                        |
-                                </styled.h6>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                <Styled(NavLink)
-                                        href="/components/"
-                                >
-                                        Sign up
-                                </Styled(NavLink)>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                <Styled(NavLink)
                                         href="https://github.com/reactstrap/reactstrap"
                                 >
-                                        Log In
+                                        <Styled(Button)>
+                                                <styled.span>
+                                                        Sign up
+                                                </styled.span>
+                                        </Styled(Button)>
                                 </Styled(NavLink)>
                         </Styled(NavItem)>
                 </Styled(Nav)>
@@ -106,7 +81,10 @@ ShallowWrapper {
           <Styled(NavbarBrand)
             href="/"
 >
-            Spotify
+            <styled.img
+                        alt="logo"
+                        src="logo.png"
+            />
 </Styled(NavbarBrand)>,
           <NavbarToggler
             onClick={[Function]}
@@ -137,47 +115,19 @@ ShallowWrapper {
             >
                         <Styled(NavItem)>
                                     <Styled(NavLink)
-                                                href="/components/"
-                                    >
-                                                Premium
-                                    </Styled(NavLink)>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                    <Styled(NavLink)
-                                                href="/components/"
-                                    >
-                                                Help
-                                    </Styled(NavLink)>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                    <Styled(NavLink)
-                                                href="/components/"
-                                    >
-                                                Download
-                                    </Styled(NavLink)>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                    <styled.h6>
-                                                |
-                                    </styled.h6>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                    <Styled(NavLink)
-                                                href="/components/"
-                                    >
-                                                Sign up
-                                    </Styled(NavLink)>
-                        </Styled(NavItem)>
-                        <Styled(NavItem)>
-                                    <Styled(NavLink)
                                                 href="https://github.com/reactstrap/reactstrap"
                                     >
-                                                Log In
+                                                <Styled(Button)>
+                                                            <styled.span>
+                                                                        Sign up
+                                                            </styled.span>
+                                                </Styled(Button)>
                                     </Styled(NavLink)>
                         </Styled(NavItem)>
             </Styled(Nav)>
 </Collapse>,
         ],
+        "className": "fixed-top",
         "expand": "md",
       },
       "ref": null,
@@ -187,11 +137,25 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": "Spotify",
+            "children": <styled.img
+              alt="logo"
+              src="logo.png"
+/>,
             "href": "/",
           },
           "ref": null,
-          "rendered": "Spotify",
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "alt": "logo",
+              "src": "logo.png",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
           "type": [Function],
         },
         Object {
@@ -219,42 +183,13 @@ ShallowWrapper {
 >
               <Styled(NavItem)>
                             <Styled(NavLink)
-                                          href="/components/"
-                            >
-                                          Premium
-                            </Styled(NavLink)>
-              </Styled(NavItem)>
-              <Styled(NavItem)>
-                            <Styled(NavLink)
-                                          href="/components/"
-                            >
-                                          Help
-                            </Styled(NavLink)>
-              </Styled(NavItem)>
-              <Styled(NavItem)>
-                            <Styled(NavLink)
-                                          href="/components/"
-                            >
-                                          Download
-                            </Styled(NavLink)>
-              </Styled(NavItem)>
-              <Styled(NavItem)>
-                            <styled.h6>
-                                          |
-                            </styled.h6>
-              </Styled(NavItem)>
-              <Styled(NavItem)>
-                            <Styled(NavLink)
-                                          href="/components/"
-                            >
-                                          Sign up
-                            </Styled(NavLink)>
-              </Styled(NavItem)>
-              <Styled(NavItem)>
-                            <Styled(NavLink)
                                           href="https://github.com/reactstrap/reactstrap"
                             >
-                                          Log In
+                                          <Styled(Button)>
+                                                        <styled.span>
+                                                                      Sign up
+                                                        </styled.span>
+                                          </Styled(Button)>
                             </Styled(NavLink)>
               </Styled(NavItem)>
 </Styled(Nav)>,
@@ -280,89 +215,48 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": Array [
-                <Styled(NavItem)>
-                  <Styled(NavLink)
-                                    href="/components/"
-                  >
-                                    Premium
-                  </Styled(NavLink)>
+              "children": <Styled(NavItem)>
+                <Styled(NavLink)
+                                href="https://github.com/reactstrap/reactstrap"
+                >
+                                <Styled(Button)>
+                                                <styled.span>
+                                                                Sign up
+                                                </styled.span>
+                                </Styled(Button)>
+                </Styled(NavLink)>
 </Styled(NavItem)>,
-                <Styled(NavItem)>
-                  <Styled(NavLink)
-                                    href="/components/"
-                  >
-                                    Help
-                  </Styled(NavLink)>
-</Styled(NavItem)>,
-                <Styled(NavItem)>
-                  <Styled(NavLink)
-                                    href="/components/"
-                  >
-                                    Download
-                  </Styled(NavLink)>
-</Styled(NavItem)>,
-                <Styled(NavItem)>
-                  <styled.h6>
-                                    |
-                  </styled.h6>
-</Styled(NavItem)>,
-                <Styled(NavItem)>
-                  <Styled(NavLink)
-                                    href="/components/"
-                  >
-                                    Sign up
-                  </Styled(NavLink)>
-</Styled(NavItem)>,
-                <Styled(NavItem)>
-                  <Styled(NavLink)
-                                    href="https://github.com/reactstrap/reactstrap"
-                  >
-                                    Log In
-                  </Styled(NavLink)>
-</Styled(NavItem)>,
-              ],
               "className": "ml-auto",
               "navbar": true,
             },
             "ref": null,
-            "rendered": Array [
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <Styled(NavLink)
-                    href="/components/"
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "children": <Styled(NavLink)
+                  href="https://github.com/reactstrap/reactstrap"
 >
-                    Premium
+                  <Styled(Button)>
+                                    <styled.span>
+                                                      Sign up
+                                    </styled.span>
+                  </Styled(Button)>
 </Styled(NavLink)>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Premium",
-                    "href": "/components/",
-                  },
-                  "ref": null,
-                  "rendered": "Premium",
-                  "type": [Function],
-                },
-                "type": [Function],
               },
-              Object {
+              "ref": null,
+              "rendered": Object {
                 "instance": null,
                 "key": undefined,
                 "nodeType": "class",
                 "props": Object {
-                  "children": <Styled(NavLink)
-                    href="/components/"
->
-                    Help
-</Styled(NavLink)>,
+                  "children": <Styled(Button)>
+                    <styled.span>
+                                        Sign up
+                    </styled.span>
+</Styled(Button)>,
+                  "href": "https://github.com/reactstrap/reactstrap",
                 },
                 "ref": null,
                 "rendered": Object {
@@ -370,117 +264,28 @@ ShallowWrapper {
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": "Help",
-                    "href": "/components/",
+                    "children": <styled.span>
+                      Sign up
+</styled.span>,
                   },
                   "ref": null,
-                  "rendered": "Help",
+                  "rendered": Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "class",
+                    "props": Object {
+                      "children": "Sign up",
+                    },
+                    "ref": null,
+                    "rendered": "Sign up",
+                    "type": [Function],
+                  },
                   "type": [Function],
                 },
                 "type": [Function],
               },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <Styled(NavLink)
-                    href="/components/"
->
-                    Download
-</Styled(NavLink)>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Download",
-                    "href": "/components/",
-                  },
-                  "ref": null,
-                  "rendered": "Download",
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <styled.h6>
-                    |
-</styled.h6>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "|",
-                  },
-                  "ref": null,
-                  "rendered": "|",
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <Styled(NavLink)
-                    href="/components/"
->
-                    Sign up
-</Styled(NavLink)>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Sign up",
-                    "href": "/components/",
-                  },
-                  "ref": null,
-                  "rendered": "Sign up",
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-              Object {
-                "instance": null,
-                "key": undefined,
-                "nodeType": "class",
-                "props": Object {
-                  "children": <Styled(NavLink)
-                    href="https://github.com/reactstrap/reactstrap"
->
-                    Log In
-</Styled(NavLink)>,
-                },
-                "ref": null,
-                "rendered": Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": "Log In",
-                    "href": "https://github.com/reactstrap/reactstrap",
-                  },
-                  "ref": null,
-                  "rendered": "Log In",
-                  "type": [Function],
-                },
-                "type": [Function],
-              },
-            ],
+              "type": [Function],
+            },
             "type": [Function],
           },
           "type": [Function],
@@ -497,12 +302,16 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": <Styled(Navbar)
+          className="fixed-top"
           expand="md"
 >
           <Styled(NavbarBrand)
                     href="/"
           >
-                    Spotify
+                    <styled.img
+                              alt="logo"
+                              src="logo.png"
+                    />
           </Styled(NavbarBrand)>
           <NavbarToggler
                     onClick={[Function]}
@@ -533,42 +342,13 @@ ShallowWrapper {
                     >
                               <Styled(NavItem)>
                                         <Styled(NavLink)
-                                                  href="/components/"
-                                        >
-                                                  Premium
-                                        </Styled(NavLink)>
-                              </Styled(NavItem)>
-                              <Styled(NavItem)>
-                                        <Styled(NavLink)
-                                                  href="/components/"
-                                        >
-                                                  Help
-                                        </Styled(NavLink)>
-                              </Styled(NavItem)>
-                              <Styled(NavItem)>
-                                        <Styled(NavLink)
-                                                  href="/components/"
-                                        >
-                                                  Download
-                                        </Styled(NavLink)>
-                              </Styled(NavItem)>
-                              <Styled(NavItem)>
-                                        <styled.h6>
-                                                  |
-                                        </styled.h6>
-                              </Styled(NavItem)>
-                              <Styled(NavItem)>
-                                        <Styled(NavLink)
-                                                  href="/components/"
-                                        >
-                                                  Sign up
-                                        </Styled(NavLink)>
-                              </Styled(NavItem)>
-                              <Styled(NavItem)>
-                                        <Styled(NavLink)
                                                   href="https://github.com/reactstrap/reactstrap"
                                         >
-                                                  Log In
+                                                  <Styled(Button)>
+                                                            <styled.span>
+                                                                      Sign up
+                                                            </styled.span>
+                                                  </Styled(Button)>
                                         </Styled(NavLink)>
                               </Styled(NavItem)>
                     </Styled(Nav)>
@@ -585,7 +365,10 @@ ShallowWrapper {
             <Styled(NavbarBrand)
               href="/"
 >
-              Spotify
+              <styled.img
+                            alt="logo"
+                            src="logo.png"
+              />
 </Styled(NavbarBrand)>,
             <NavbarToggler
               onClick={[Function]}
@@ -616,47 +399,19 @@ ShallowWrapper {
               >
                             <Styled(NavItem)>
                                           <Styled(NavLink)
-                                                        href="/components/"
-                                          >
-                                                        Premium
-                                          </Styled(NavLink)>
-                            </Styled(NavItem)>
-                            <Styled(NavItem)>
-                                          <Styled(NavLink)
-                                                        href="/components/"
-                                          >
-                                                        Help
-                                          </Styled(NavLink)>
-                            </Styled(NavItem)>
-                            <Styled(NavItem)>
-                                          <Styled(NavLink)
-                                                        href="/components/"
-                                          >
-                                                        Download
-                                          </Styled(NavLink)>
-                            </Styled(NavItem)>
-                            <Styled(NavItem)>
-                                          <styled.h6>
-                                                        |
-                                          </styled.h6>
-                            </Styled(NavItem)>
-                            <Styled(NavItem)>
-                                          <Styled(NavLink)
-                                                        href="/components/"
-                                          >
-                                                        Sign up
-                                          </Styled(NavLink)>
-                            </Styled(NavItem)>
-                            <Styled(NavItem)>
-                                          <Styled(NavLink)
                                                         href="https://github.com/reactstrap/reactstrap"
                                           >
-                                                        Log In
+                                                        <Styled(Button)>
+                                                                      <styled.span>
+                                                                                    Sign up
+                                                                      </styled.span>
+                                                        </Styled(Button)>
                                           </Styled(NavLink)>
                             </Styled(NavItem)>
               </Styled(Nav)>
 </Collapse>,
           ],
+          "className": "fixed-top",
           "expand": "md",
         },
         "ref": null,
@@ -666,11 +421,25 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": "Spotify",
+              "children": <styled.img
+                alt="logo"
+                src="logo.png"
+/>,
               "href": "/",
             },
             "ref": null,
-            "rendered": "Spotify",
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {
+                "alt": "logo",
+                "src": "logo.png",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
             "type": [Function],
           },
           Object {
@@ -698,42 +467,13 @@ ShallowWrapper {
 >
                 <Styled(NavItem)>
                                 <Styled(NavLink)
-                                                href="/components/"
-                                >
-                                                Premium
-                                </Styled(NavLink)>
-                </Styled(NavItem)>
-                <Styled(NavItem)>
-                                <Styled(NavLink)
-                                                href="/components/"
-                                >
-                                                Help
-                                </Styled(NavLink)>
-                </Styled(NavItem)>
-                <Styled(NavItem)>
-                                <Styled(NavLink)
-                                                href="/components/"
-                                >
-                                                Download
-                                </Styled(NavLink)>
-                </Styled(NavItem)>
-                <Styled(NavItem)>
-                                <styled.h6>
-                                                |
-                                </styled.h6>
-                </Styled(NavItem)>
-                <Styled(NavItem)>
-                                <Styled(NavLink)
-                                                href="/components/"
-                                >
-                                                Sign up
-                                </Styled(NavLink)>
-                </Styled(NavItem)>
-                <Styled(NavItem)>
-                                <Styled(NavLink)
                                                 href="https://github.com/reactstrap/reactstrap"
                                 >
-                                                Log In
+                                                <Styled(Button)>
+                                                                <styled.span>
+                                                                                Sign up
+                                                                </styled.span>
+                                                </Styled(Button)>
                                 </Styled(NavLink)>
                 </Styled(NavItem)>
 </Styled(Nav)>,
@@ -759,89 +499,48 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "class",
               "props": Object {
-                "children": Array [
-                  <Styled(NavItem)>
-                    <Styled(NavLink)
-                                        href="/components/"
-                    >
-                                        Premium
-                    </Styled(NavLink)>
+                "children": <Styled(NavItem)>
+                  <Styled(NavLink)
+                                    href="https://github.com/reactstrap/reactstrap"
+                  >
+                                    <Styled(Button)>
+                                                      <styled.span>
+                                                                        Sign up
+                                                      </styled.span>
+                                    </Styled(Button)>
+                  </Styled(NavLink)>
 </Styled(NavItem)>,
-                  <Styled(NavItem)>
-                    <Styled(NavLink)
-                                        href="/components/"
-                    >
-                                        Help
-                    </Styled(NavLink)>
-</Styled(NavItem)>,
-                  <Styled(NavItem)>
-                    <Styled(NavLink)
-                                        href="/components/"
-                    >
-                                        Download
-                    </Styled(NavLink)>
-</Styled(NavItem)>,
-                  <Styled(NavItem)>
-                    <styled.h6>
-                                        |
-                    </styled.h6>
-</Styled(NavItem)>,
-                  <Styled(NavItem)>
-                    <Styled(NavLink)
-                                        href="/components/"
-                    >
-                                        Sign up
-                    </Styled(NavLink)>
-</Styled(NavItem)>,
-                  <Styled(NavItem)>
-                    <Styled(NavLink)
-                                        href="https://github.com/reactstrap/reactstrap"
-                    >
-                                        Log In
-                    </Styled(NavLink)>
-</Styled(NavItem)>,
-                ],
                 "className": "ml-auto",
                 "navbar": true,
               },
               "ref": null,
-              "rendered": Array [
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <Styled(NavLink)
-                      href="/components/"
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "class",
+                "props": Object {
+                  "children": <Styled(NavLink)
+                    href="https://github.com/reactstrap/reactstrap"
 >
-                      Premium
+                    <Styled(Button)>
+                                        <styled.span>
+                                                            Sign up
+                                        </styled.span>
+                    </Styled(Button)>
 </Styled(NavLink)>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Premium",
-                      "href": "/components/",
-                    },
-                    "ref": null,
-                    "rendered": "Premium",
-                    "type": [Function],
-                  },
-                  "type": [Function],
                 },
-                Object {
+                "ref": null,
+                "rendered": Object {
                   "instance": null,
                   "key": undefined,
                   "nodeType": "class",
                   "props": Object {
-                    "children": <Styled(NavLink)
-                      href="/components/"
->
-                      Help
-</Styled(NavLink)>,
+                    "children": <Styled(Button)>
+                      <styled.span>
+                                            Sign up
+                      </styled.span>
+</Styled(Button)>,
+                    "href": "https://github.com/reactstrap/reactstrap",
                   },
                   "ref": null,
                   "rendered": Object {
@@ -849,117 +548,28 @@ ShallowWrapper {
                     "key": undefined,
                     "nodeType": "class",
                     "props": Object {
-                      "children": "Help",
-                      "href": "/components/",
+                      "children": <styled.span>
+                        Sign up
+</styled.span>,
                     },
                     "ref": null,
-                    "rendered": "Help",
+                    "rendered": Object {
+                      "instance": null,
+                      "key": undefined,
+                      "nodeType": "class",
+                      "props": Object {
+                        "children": "Sign up",
+                      },
+                      "ref": null,
+                      "rendered": "Sign up",
+                      "type": [Function],
+                    },
                     "type": [Function],
                   },
                   "type": [Function],
                 },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <Styled(NavLink)
-                      href="/components/"
->
-                      Download
-</Styled(NavLink)>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Download",
-                      "href": "/components/",
-                    },
-                    "ref": null,
-                    "rendered": "Download",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <styled.h6>
-                      |
-</styled.h6>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "|",
-                    },
-                    "ref": null,
-                    "rendered": "|",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <Styled(NavLink)
-                      href="/components/"
->
-                      Sign up
-</Styled(NavLink)>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Sign up",
-                      "href": "/components/",
-                    },
-                    "ref": null,
-                    "rendered": "Sign up",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-                Object {
-                  "instance": null,
-                  "key": undefined,
-                  "nodeType": "class",
-                  "props": Object {
-                    "children": <Styled(NavLink)
-                      href="https://github.com/reactstrap/reactstrap"
->
-                      Log In
-</Styled(NavLink)>,
-                  },
-                  "ref": null,
-                  "rendered": Object {
-                    "instance": null,
-                    "key": undefined,
-                    "nodeType": "class",
-                    "props": Object {
-                      "children": "Log In",
-                      "href": "https://github.com/reactstrap/reactstrap",
-                    },
-                    "ref": null,
-                    "rendered": "Log In",
-                    "type": [Function],
-                  },
-                  "type": [Function],
-                },
-              ],
+                "type": [Function],
+              },
               "type": [Function],
             },
             "type": [Function],
