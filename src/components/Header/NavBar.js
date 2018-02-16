@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
 import { NavbarToggler, Collapse } from 'reactstrap';
 import StyledNav from './StyledNav';
-import StyledSignupButton from './StyledSignupButton';
 import StyledNavbar from './StyledNavbar';
 import StyledNavItem from './StyledNavItem';
-import StyledNavLink from './StyledNavLink';
+import SignupButton from './SignupButton';
 import StyledNavbarBrand from './StyledNavbarBrand';
 import SignupText from './SignupText';
 import Logo from './Logo'
@@ -33,11 +32,9 @@ class NavBar extends Component {
           <Collapse isOpen={this.state.isOpen} navbar>
             <StyledNav className="ml-auto" navbar>
               <StyledNavItem>
-                <StyledNavLink href="https://github.com/reactstrap/reactstrap">
-                  <StyledSignupButton>
-                    <SignupText>Sign up</SignupText>
-                  </StyledSignupButton>
-                </StyledNavLink>
+                <SignupButton href="https://github.com/reactstrap/reactstrap">
+                  <SignupText>Sign up</SignupText>
+                </SignupButton>
               </StyledNavItem>
             </StyledNav>
           </Collapse>
