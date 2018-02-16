@@ -7,7 +7,6 @@ import rootReducer from './rootReducer';
 import rootSaga from './rootSaga';
 import { persistStore, persistReducer } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
-//import reduxForms from './reduxForms';
 import thunk from 'redux-thunk';
 
 
