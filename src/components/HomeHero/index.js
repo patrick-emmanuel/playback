@@ -11,7 +11,7 @@ const HomeHero = () => (
         What music will you listen to today?
       </HeroCaption>
       <SubCaption>
-        Be the first to know when we launch.
+        Check out your Deezer flow,<br/>or browse curated music collections by genre.
       </SubCaption>
     </Hero>
   </Wrapper>

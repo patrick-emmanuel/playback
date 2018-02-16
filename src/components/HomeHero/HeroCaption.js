@@ -4,7 +4,7 @@ const HeroCaption = styled.h1`
   color: white;
   font-weight: bold;
   font-size: 44px;
-  margin-top: 80px;
+  margin-top: 131px;
   padding-left: 2.5em;
   padding-right: 2.5em;
 `;
