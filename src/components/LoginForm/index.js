@@ -12,7 +12,7 @@ const Wrapper = styled.div`
 
 const LoginForm = () => (
   <Wrapper>
-    <StyledForm model="login">
+    <StyledForm>
       <LoginInput type="text" placeholder="Email"/>
       <LoginInput type="text" placeholder="Password"/>
       <LoginButton>Log In</LoginButton>
