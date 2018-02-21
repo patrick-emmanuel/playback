@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.18.0",
     "bootstrap": "^4.0.0-beta.3",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -14,6 +15,7 @@
     "redux": "^3.7.2",
     "redux-saga": "^0.16.0",
     "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
     "styled-components": "^3.0.2",
     "typeface-oxygen": "0.0.54",
     "validate.js": "^0.12.0"
