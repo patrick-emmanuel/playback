@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import LoginInput from './LoginInput';
 import StyledForm from './StyledForm';
 import styled from 'styled-components';

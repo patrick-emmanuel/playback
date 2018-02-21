@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import { Form } from 'react-redux-form';
 
-const StyledForm = styled(Form)`
+const StyledForm = styled.form`
   width: 24%;
   border: none;
 `;
