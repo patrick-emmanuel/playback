@@ -26,7 +26,7 @@ class NavBar extends Component {
     return (
       <div>
         <StyledNavbar expand="md" className="fixed-top">
-          <StyledNavbarBrand href="/">DIZUR</StyledNavbarBrand>
+          <StyledNavbarBrand href="/"></StyledNavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <StyledNav className="ml-auto" navbar>
