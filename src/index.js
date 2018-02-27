@@ -14,7 +14,7 @@ const { persistor, store } = configureStore();
 
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate loading={<div/>}persistor={persistor}>
+    <PersistGate loading={<div />} persistor={persistor}>
       <Router history={history}>
         <Switch>
           <Route path="/" component={App} />

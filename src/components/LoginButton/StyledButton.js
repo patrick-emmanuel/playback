@@ -5,9 +5,9 @@ const LoginButton = styled.button`
   text-align: center;
   border: none;
   color: white;
-  margin-top: 30px;
+  margin-top: 100px;
   height: 50px;
-  width: 100%;
+  width: 30%;
   &:hover {
     background-color: #2c43ce;
   }

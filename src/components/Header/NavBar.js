@@ -16,7 +16,7 @@ class NavBar extends Component {
     this.state = {
       isOpen: false
     };
-  }
+  }o
   toggle() {
     let isOpenState = this.state.isOpen;
     this.setState({ isOpen: !isOpenState });
