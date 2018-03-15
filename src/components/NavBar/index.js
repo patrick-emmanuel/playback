@@ -5,8 +5,7 @@ import StyledNavbar from './StyledNavbar';
 import StyledNavItem from './StyledNavItem';
 import StyledNavbarBrand from './StyledNavbarBrand';
 import SignupText from './SignupText';
-import Logo from './Logo';
-import logo from './logo.svg';
+import Logo from '../Logo';
 
 class NavBar extends Component {
   constructor(props) {
@@ -26,7 +25,7 @@ class NavBar extends Component {
       <div>
         <StyledNavbar expand="md" className="fixed-top">
           <StyledNavbarBrand href="/">
-            <Logo src={logo} />
+            <Logo/>
           </StyledNavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>

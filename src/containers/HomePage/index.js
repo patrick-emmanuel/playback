@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import HomeHero from '../../components/HomeHero';
 import ExploreButton from '../../components/ExploreButton';
 

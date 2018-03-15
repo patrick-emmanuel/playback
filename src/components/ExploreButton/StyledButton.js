@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const LoginButton = styled.button`
+const StyledButton = styled.button`
   background: linear-gradient(230.82deg, #ff4747 4.95%, #f2684a 106.9%);
   text-align: center;
   border: none;
@@ -16,4 +16,4 @@ const LoginButton = styled.button`
   }
 `;
 
-export default LoginButton;
+export default StyledButton;

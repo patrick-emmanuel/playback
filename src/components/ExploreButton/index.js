@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import StyledButton from './StyledButton';
+import StyledLink from './StyledLink';
 
 const Wrapper = styled.div`
   display: flex;
@@ -8,10 +9,12 @@ const Wrapper = styled.div`
   margin-top: 70px;
 `;
 
-const LoginButton = () => (
+const ExploreButton = () => (
   <Wrapper>
-    <StyledButton>Explore</StyledButton>
+    <StyledButton>
+      <StyledLink to="/explore">Explore</StyledLink>
+    </StyledButton>
   </Wrapper>
 );
 
-export default LoginButton;
+export default ExploreButton;
