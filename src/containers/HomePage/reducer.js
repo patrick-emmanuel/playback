@@ -6,6 +6,7 @@ import {
 
 const initialState = {
   loading: false,
+  popup: null,
   error: null
 };
 
@@ -14,7 +15,11 @@ export function homeReducer(state = initialState, action) {
     case USER_LOGIN_REQUEST:
       return { loading: true };
     case USER_LOGIN_SUCCESS:
-      return { loading: false };
+      return {
+        ...state,
+        loading: false,
+        popup: action.payload.popup
+      };
     case USER_LOGIN_FAILURE:
       return {
         ...state,

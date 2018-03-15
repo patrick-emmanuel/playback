@@ -8,9 +8,12 @@ export function attemptLogin() {
   };
 }
 
-export function loginSuccess() {
+export function loginSuccess(popup) {
   return {
-    type: USER_LOGIN_SUCCESS
+    type: USER_LOGIN_SUCCESS,
+    payload:{
+      popup
+    }
   };
 }
 

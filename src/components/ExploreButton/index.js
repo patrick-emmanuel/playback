@@ -8,9 +8,9 @@ const Wrapper = styled.div`
   margin-top: 70px;
 `;
 
-const LoginButton = ({ handleLogin }) => (
+const LoginButton = () => (
   <Wrapper>
-    <StyledButton onClick={handleLogin}>Log In</StyledButton>
+    <StyledButton>Explore</StyledButton>
   </Wrapper>
 );
 
