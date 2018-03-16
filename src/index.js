@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
 import App from '../src/containers/App';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css';
 import registerServiceWorker from './registerServiceWorker';
 import configureStore, { history } from './configureStore';
 import { Router, Route, Switch } from 'react-router-dom';
