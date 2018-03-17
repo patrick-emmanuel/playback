@@ -7,7 +7,23 @@ import SideBarMenu from '../../components/SideBarMenu';
 
 class ExplorePage extends Component {
   state = {
-    menus: ['Home', 'Browse']
+    menus: [
+      {
+        name: 'Home',
+        iconClassName: 'fa fa-home',
+        iconName: 'home'
+      },
+      {
+        name: 'Browse',
+        iconClassName: 'fa fa-search',
+        iconName: 'browser'
+      },
+      {
+        name: 'Setting',
+        iconClassName: 'fa fa-wrench',
+        iconName: 'wrench'
+      }
+    ]
   };
   render() {
     return (

@@ -9,7 +9,13 @@ const Wrapper = styled.div`
 `;
 
 const LinkList = ({ menus }) => (
-  <Wrapper>{menus.map(menu => <Link menu={menu} />)}</Wrapper>
+  <Wrapper>
+    {menus.map(menu => (
+      <Link
+        menu={menu}
+      />
+    ))}
+  </Wrapper>
 );
 
 export default LinkList;
