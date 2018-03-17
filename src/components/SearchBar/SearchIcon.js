@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const SearchIcon = styled(FontAwesome)`
   position: absolute;
-  top: 15px;
+  top: 10px;
   left: 220px;
 `;
 

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 const StyledSideBar = styled.div`
-  width: 300px;
-  height: 1030px;
+  width: 270px;
+  height: 800px;
   flex-direction: column;
   align-items: center;
   display: flex;

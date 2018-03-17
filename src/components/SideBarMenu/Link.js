@@ -5,11 +5,11 @@ import Icons from './Icons';
 const Wrapper = styled.div`
   width: 100%;
   height: 45px;
-  border: 1px solid #3b2a2a;
   text-align: left;
   padding: 9px 20px;
   font-family: Ubuntu;
   font-size: 0.9em;
+  cursor: pointer;
   &:hover {
     border-left: 5px solid #eb5959;
     background: #6e4e4e;
