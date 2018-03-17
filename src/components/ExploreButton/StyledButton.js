@@ -16,6 +16,9 @@ const StyledButton = styled.button`
   &:hover {
     background-color: #2c43ce;
   }
+  &:focus {
+    outline-width: 0;
+  }
 `;
 
 export default StyledButton;
