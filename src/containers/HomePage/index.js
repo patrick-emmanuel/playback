@@ -1,22 +1,33 @@
 import React, { Component } from 'react';
-import HomeHero from '../../components/HomeHero';
-import ExploreButton from '../../components/ExploreButton';
+import SideBar from '../../components/SideBar';
+import Logo from '../../components/Logo';
+import SearchBar from '../../components/SearchBar';
+import SideBarMenu from '../../components/SideBarMenu';
+import MiniPlayer from '../../components/MiniPlayer';
+import FlowPlayer from '../../components/FlowPlayer';
+import MainPage from './MainPage';
+import menuData from './menuData';
+import LogoWrapper from './LogoWrapper';
 
-class HomePage extends Component {
-  loginUser = e => {
-    e.preventDefault();
-    this.props.login();
+class ExplorePage extends Component {
+  state = {
+    menus: menuData
   };
-
   render() {
-    return (
-      <div>
-        <HomeHero>
-          <ExploreButton />
-        </HomeHero>
-      </div>
-    );
+    return <div>
+        <SideBar>
+          <LogoWrapper>
+            <Logo />
+          </LogoWrapper>
+          <SearchBar />
+          <SideBarMenu menus={this.state.menus} />
+          <MiniPlayer />
+        </SideBar>
+        <MainPage>
+          <FlowPlayer />
+        </MainPage>
+      </div>;
   }
 }
 
-export default HomePage;
+export default ExplorePage;

@@ -2,11 +2,14 @@ import styled from 'styled-components';
 
 const StyledSideBar = styled.div`
   width: 270px;
-  height: 700px;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
   flex-direction: column;
-  align-items: center;
   display: flex;
-
   background: linear-gradient(
     180deg,
     #422d2d 27.57%,

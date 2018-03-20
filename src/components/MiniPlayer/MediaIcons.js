@@ -1,7 +1,10 @@
 import styled from 'styled-components';
 
 const MediaIcons = styled.div`
-  padding-left: 24px;
+  display: flex;
+  justify-content: space-around;
+  padding: 0 30px;
+  flex: 1;
 `;
 
 export default MediaIcons;

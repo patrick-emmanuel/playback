@@ -4,14 +4,17 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
   width: 100%;
-  margin-top: 16px;
   color: white;
+  padding-top: 10px;
+  order: 1;
+  flex: 3;
 `;
 
 const LinkList = ({ menus }) => (
   <Wrapper>
     {menus.map(menu => (
       <Link
+        key={menu.name}
         menu={menu}
       />
     ))}

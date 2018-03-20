@@ -10,8 +10,14 @@ injectGlobal`
 
   *{
     box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
   } 
 
+h1{
+  letter-spacing: -2px;
+}
   #root {
     min-height: 100vh;
   }

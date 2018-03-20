@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import HomePage from '../HomePage';
-import ExplorePage from '../ExplorePage';
+import LandingPage from '../LandingPage';
 //import {PrivateRoute} from '../../utils/PrivateRoute';
 
 class App extends Component {
@@ -9,8 +9,8 @@ class App extends Component {
     return (
       <div>
         <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route exact path="/explore" component={ExplorePage} />
+          <Route exact path="/" component={LandingPage} />
+          <Route exact path="/home" component={HomePage} />
         </Switch>
       </div>
     );

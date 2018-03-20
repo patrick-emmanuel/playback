@@ -8,10 +8,10 @@ const StyledButton = styled.button`
   font-weight: bold;
   text-transform: uppercase;
   cursor: pointer;
-  margin-top: 130px;
+  margin-top: 30px;
   height: 50px;
   width: 25%;
-  border-radius: 40px;
+  border-radius: 25px;
   letter-spacing: 7px;
   &:hover {
     background-color: #2c43ce;

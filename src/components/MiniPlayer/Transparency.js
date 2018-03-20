@@ -1,10 +1,11 @@
 import styled from 'styled-components';
 
 const Transparency = styled.div`
-  background-color: #000000;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
   height: 100%;
   width: 100%;
-  opacity: 0.8;
   padding: 20px 20px;
 `;
 

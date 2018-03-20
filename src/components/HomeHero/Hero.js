@@ -4,7 +4,6 @@ import heroLg from './hero-lg.jpg';
 const Hero = styled.div`
   background-image: url(${heroLg});
   height: 100vh;
-  background-attachment: fixed;
   background-size: cover;
   text-align: center;
   flex-direction: column;
