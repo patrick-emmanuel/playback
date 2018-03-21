@@ -1,4 +1,4 @@
-import Link from './Link';
+import Menu from './Menu';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -10,15 +10,8 @@ const Wrapper = styled.div`
   flex: 3;
 `;
 
-const LinkList = ({ menus }) => (
-  <Wrapper>
-    {menus.map(menu => (
-      <Link
-        key={menu.name}
-        menu={menu}
-      />
-    ))}
-  </Wrapper>
+const MenuList = ({ menus }) => (
+  <Wrapper>{menus.map(menu => <Menu key={menu.name} menu={menu} />)}</Wrapper>
 );
 
-export default LinkList;
+export default MenuList;

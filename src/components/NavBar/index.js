@@ -3,7 +3,6 @@ import { NavbarToggler, Collapse } from 'reactstrap';
 import StyledNav from './StyledNav';
 import StyledNavbar from './StyledNavbar';
 import StyledNavItem from './StyledNavItem';
-import StyledNavbarBrand from './StyledNavbarBrand';
 import SignupText from './SignupText';
 import Logo from '../Logo';
 
@@ -24,9 +23,7 @@ class NavBar extends Component {
     return (
       <div>
         <StyledNavbar expand="md" className="fixed-top">
-          <StyledNavbarBrand href="/">
-            <Logo/>
-          </StyledNavbarBrand>
+          <Logo />
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <StyledNav className="ml-auto" navbar>

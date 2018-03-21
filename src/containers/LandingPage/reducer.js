@@ -10,7 +10,7 @@ const initialState = {
   error: null
 };
 
-export function homeReducer(state = initialState, action) {
+export function landingReducer(state = initialState, action) {
   switch (action.type) {
     case USER_LOGIN_REQUEST:
       return { loading: true };
