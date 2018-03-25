@@ -1,6 +1,9 @@
 import { all, fork } from 'redux-saga/effects';
-import { editorialWatcher } from '../src/containers/HomePage/saga';
+import {
+  editorialWatcher,
+  chartWatcher
+} from '../src/containers/HomePage/saga';
 
 export default function* rootSaga() {
-  yield all([fork(editorialWatcher)]);
+  yield all([fork(editorialWatcher), fork(chartWatcher)]);
 }

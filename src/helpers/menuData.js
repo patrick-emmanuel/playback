@@ -1,4 +1,5 @@
 import HomePage from '../containers/HomePage';
+import SideBar from '../components/SideBar';
 import React from 'react';
 
 export default [
@@ -8,7 +9,8 @@ export default [
     iconClassName: 'fa fa-home',
     iconName: 'home',
     exact: true,
-    component: () => <HomePage/>
+    component: () => <HomePage/>,
+    sidebar: () => <SideBar/>
   },
   /*{
     path: '/browse',

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import songCover from './2014ForestHillsDrive.jpg';
+import React from 'react';
 import SongTitle from './SongTitle';
 import Artiste from './Artiste';
 import Transparency from './Transparency';
@@ -7,63 +6,75 @@ import MediaIcon from './MediaIcon';
 import MediaIcons from './MediaIcons';
 import Heading from './Heading';
 import styled from 'styled-components';
+import defaultSongCover from './2014ForestHillsDrive.jpg';
 
 const Wrapper = styled.div`
   width: 100%;
+  height: 250px;
   order: 1;
   flex: 3;
-  background-image: url(${songCover});
+  background-image: url(${props => props.background || defaultSongCover});
   background-size: cover;
 `;
 
 const MiniImage = styled.img`
   width: 100px;
-  height: 100px;
   opacity: ${props => (props.mouseIn ? '1' : '0')};
   z-index: 99999;
   position: absolute;
   transition: all 0.5s;
 `;
 
-class MiniPlayer extends Component {
-  constructor() {
-    super();
-    this.state = { mouseIn: false };
-  }
-
-  handlePlayerMouseEnter = () => {
-    console.log('Mouse over y');
-    this.setState({ mouseIn: true });
+const MiniPlayer = ({
+  song,
+  mouseEnterHandler,
+  mouseLeaveHandler,
+  mouseIn
+}) => {
+  const handlePlay = () => {
+    if (this.music.paused) {
+      this.music.play();
+    } else {
+      this.music.pause();
+    }
   };
-  handlePlayerMouseLeave = () => {
-    console.log('Mouse out o');
-    this.setState({ mouseIn: false });
-  };
-  render() {
-    return (
+  return (
+    <div>
       <Wrapper
-        onMouseEnter={this.handlePlayerMouseEnter}
-        onMouseLeave={this.handlePlayerMouseLeave}
+        onMouseEnter={mouseEnterHandler}
+        onMouseLeave={mouseLeaveHandler}
+        background={song.artist.picture_big}
       >
         <Transparency>
           <MiniImage
-            src={songCover}
+            src={song.artist.picture_medium}
             alt="Mini top right song cover"
-            mouseIn={this.state.mouseIn}
+            mouseIn={mouseIn}
           />
-          <Heading mouseIn={this.state.mouseIn}>
-            <SongTitle>No Role Modelz</SongTitle>
-            <Artiste>J Cole</Artiste>
+          <Heading mouseIn={mouseIn}>
+            <SongTitle>{song.title}</SongTitle>
+            <Artiste>{song.artist.name}</Artiste>
           </Heading>
+          <audio
+            ref={audio => {
+              this.music = audio;
+            }}
+          >
+            <source src={song.preview} type="audio/mpeg" />
+          </audio>
           <MediaIcons>
             <MediaIcon className="fas fa-backward" name="backward" />
-            <MediaIcon className="fas fa-play" name="play" />
+            <MediaIcon
+              className="fas fa-play"
+              name="play"
+              onClick={handlePlay}
+            />
             <MediaIcon className="fas fa-forward" name="forward" />
           </MediaIcons>
         </Transparency>
       </Wrapper>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default MiniPlayer;

@@ -1,5 +1,4 @@
-import React, { Component } from 'react';
-import menuData from '../../helpers/menuData';
+import React from 'react';
 import SearchBar from '../SearchBar';
 import Logo from '../Logo';
 import LogoWrapper from './LogoWrapper';
@@ -25,22 +24,26 @@ const Wrapper = styled.div`
   );
 `;
 
-class SideBar extends Component {
-  state = {
-    menus: menuData
-  };
-  render() {
-    return (
+const SideBar = ({
+  menus,
+  song,
+  mouseEnterHandler,
+  mouseLeaveHandler,
+  mouseIn
+}) => {
+  let miniPlayerProps = { song, mouseEnterHandler, mouseLeaveHandler, mouseIn };
+  return (
+    <div>
       <Wrapper>
         <LogoWrapper>
           <Logo />
         </LogoWrapper>
         <SearchBar />
-        <SideBarMenu menus={this.state.menus} />
-        <MiniPlayer />
+        <SideBarMenu menus={menus} />
+        <MiniPlayer {...miniPlayerProps} />
       </Wrapper>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default SideBar;

@@ -5,7 +5,6 @@ import SearchIcon from './SearchIcon';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-  order: 1;
   align-self: center;
   width: 90%;
 `;

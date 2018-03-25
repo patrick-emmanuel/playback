@@ -5653,6 +5653,12 @@ react-redux-form@^1.16.5:
     react-native-segmented-control-tab "^3.2.1"
     shallow-compare "^1.2.1"
 
+react-redux-loading-bar@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.yarnpkg.com/react-redux-loading-bar/-/react-redux-loading-bar-3.1.2.tgz#7d65c7558db22115b2999e47d9f2aae962ae2c33"
+  dependencies:
+    prop-types "^15.5.6"
+
 react-redux@^5.0.6:
   version "5.0.7"
   resolved "https://registry.yarnpkg.com/react-redux/-/react-redux-5.0.7.tgz#0dc1076d9afb4670f993ffaef44b8f8c1155a4c8"
