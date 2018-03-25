@@ -3,7 +3,7 @@ import SearchBar from '../SearchBar';
 import Logo from '../Logo';
 import LogoWrapper from './LogoWrapper';
 import SideBarMenu from '../SideBarMenu';
-import MiniPlayer from '../MiniPlayer';
+import Player from '../Player';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -31,7 +31,7 @@ const SideBar = ({
   mouseLeaveHandler,
   mouseIn
 }) => {
-  let miniPlayerProps = { song, mouseEnterHandler, mouseLeaveHandler, mouseIn };
+  let playerProps = { song, mouseEnterHandler, mouseLeaveHandler, mouseIn };
   return (
     <div>
       <Wrapper>
@@ -40,7 +40,7 @@ const SideBar = ({
         </LogoWrapper>
         <SearchBar />
         <SideBarMenu menus={menus} />
-        <MiniPlayer {...miniPlayerProps} />
+        <Player {...playerProps} />
       </Wrapper>
     </div>
   );

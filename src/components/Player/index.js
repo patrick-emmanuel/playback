@@ -6,6 +6,7 @@ import MediaIcon from './MediaIcon';
 import MediaIcons from './MediaIcons';
 import Heading from './Heading';
 import styled from 'styled-components';
+import MiniImage from './MiniImage';
 import defaultSongCover from './2014ForestHillsDrive.jpg';
 
 const Wrapper = styled.div`
@@ -17,15 +18,7 @@ const Wrapper = styled.div`
   background-size: cover;
 `;
 
-const MiniImage = styled.img`
-  width: 100px;
-  opacity: ${props => (props.mouseIn ? '1' : '0')};
-  z-index: 99999;
-  position: absolute;
-  transition: all 0.5s;
-`;
-
-const MiniPlayer = ({
+const Player = ({
   song,
   mouseEnterHandler,
   mouseLeaveHandler,
@@ -77,4 +70,4 @@ const MiniPlayer = ({
   );
 };
 
-export default MiniPlayer;
+export default Player;
