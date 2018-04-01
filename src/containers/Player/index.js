@@ -27,7 +27,7 @@ const Wrapper = styled.div`
 class Player extends Component {
   constructor(props) {
     super(props);
-    this.state = { mouseIn: false, playing: false };
+    this.state = { mouseIn: false, playing: false, musicEnded: false };
   }
 
   componentDidMount() {
@@ -47,6 +47,7 @@ class Player extends Component {
   }
 
   handlePlay = () => {
+    this.music.onended = this.playNext;
     if (this.music.paused) {
       this.music.play();
       this.setState({ playing: true });
