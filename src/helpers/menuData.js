@@ -1,5 +1,5 @@
 import HomePage from '../containers/HomePage';
-import SideBar from '../components/SideBar';
+import SideBar from '../containers/SideBar';
 import React from 'react';
 
 export default [

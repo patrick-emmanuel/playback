@@ -13,7 +13,6 @@ const ChartBanner = ({ data }) => (
   <Wrapper>
     <Banner>
       <ChartImage
-        opacity="0.4"
         src={data.artist.picture_xl}
         alt="The chart banner image"
       />

@@ -4,7 +4,6 @@ import { NavLink as Link } from 'react-router-dom';
 
 const active = {
   borderLeft: '5px solid #eb5959',
-  background: '#6e4e4e'
 };
 
 const StyledLink = styled(Link)`
@@ -19,7 +18,6 @@ const StyledLink = styled(Link)`
   color: white;
   &:hover {
     border-left: 5px solid #eb5959;
-    background: #6e4e4e;
     transition: border 0.1s;
     text-decoration: none;
     color: white;
