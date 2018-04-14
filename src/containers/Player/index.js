@@ -74,8 +74,9 @@ class Player extends Component {
     }
     playIndex(index);
   };
+  
 
-  handlePlayerMouseEnter = () => {
+ handlePlayerMouseEnter = () => {
     this.setState({ mouseIn: true });
   };
   handlePlayerMouseLeave = () => {
