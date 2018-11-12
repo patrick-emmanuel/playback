@@ -17,7 +17,7 @@ class HomePage extends Component {
     const { loadingChart, chart } = this.props;
     return (
       <div>
-        <Content>{!loadingChart && <Chart {...chart} />}</Content>
+        <Content>{!loadingChart && chart ? <Chart {...chart} /> : null}</Content>
       </div>
     );
   }

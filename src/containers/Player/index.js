@@ -74,9 +74,9 @@ class Player extends Component {
     }
     playIndex(index);
   };
-  
 
- handlePlayerMouseEnter = () => {
+
+  handlePlayerMouseEnter = () => {
     this.setState({ mouseIn: true });
   };
   handlePlayerMouseLeave = () => {
@@ -105,7 +105,7 @@ class Player extends Component {
 
   render() {
     const { chart, index, chartLoading } = this.props;
-    if (!chartLoading) {
+    if (!chartLoading && chart) {
       return (
         <div>
           <Wrapper
