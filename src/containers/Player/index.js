@@ -5,7 +5,7 @@ import { makeSelectIndex } from './selectors';
 import { playMusic } from './actions';
 import SongTitle from './SongTitle';
 import Artiste from './Artiste';
-import Transparency from './Transparency';
+import Transparency from '../../components/Transparency';
 import MediaIcon from './MediaIcon';
 import MediaIcons from './MediaIcons';
 import { makeChart, makeChartLoading } from '../HomePage/selectors';

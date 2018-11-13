@@ -8,11 +8,13 @@ const Wrapper = styled.div`
   width: 100%;
   background-color: black;
   color: white;
+  position: relative;
 `;
 
 const Card = ({ track }) => (
   <Wrapper>
     <ChartImage
+      opacity={0.7}
       src={track.artist.picture_medium}
       alt="The editorial category"
     />
