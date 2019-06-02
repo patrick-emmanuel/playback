@@ -10,7 +10,7 @@ import { Router, Route, Switch } from 'react-router-dom';
 import { PersistGate } from 'redux-persist/es/integration/react';
 import 'typeface-oxygen';
 import './global-styles.js';
-
+// playback CEO : patrick
 const { persistor, store } = configureStore();
 
 ReactDOM.render(
