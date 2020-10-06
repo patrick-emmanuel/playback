@@ -6826,9 +6826,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typeface-oxygen@0.0.54:
-  version "0.0.54"
-  resolved "https://registry.yarnpkg.com/typeface-oxygen/-/typeface-oxygen-0.0.54.tgz#97dee5577fc0e653f73ce8a1a2e3c50845731d2d"
+typeface-oxygen@1.1.13:
+  version "1.1.13"
+  resolved "https://registry.yarnpkg.com/typeface-oxygen/-/typeface-oxygen-1.1.13.tgz#05b33008227cca46a7bc4a0ee351672819ae352e"
 
 ua-parser-js@^0.7.9:
   version "0.7.17"
