@@ -6831,8 +6831,8 @@ typeface-oxygen@0.0.54:
   resolved "https://registry.yarnpkg.com/typeface-oxygen/-/typeface-oxygen-0.0.54.tgz#97dee5577fc0e653f73ce8a1a2e3c50845731d2d"
 
 ua-parser-js@^0.7.9:
-  version "0.7.17"
-  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.17.tgz#e9ec5f9498b9ec910e7ae3ac626a805c4d09ecac"
+  version "0.7.31"
+  resolved "https://registry.yarnpkg.com/ua-parser-js/-/ua-parser-js-0.7.31.tgz#649a656b191dffab4f21d5e053e27ca17cbff5c6"
 
 uglify-js@3.3.x, uglify-js@^3.0.13:
   version "3.3.8"
